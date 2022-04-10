@@ -1,5 +1,5 @@
-bread
-bacon
-milk
-eggs
-oil
+bread x 3
+bacon x 10
+milk x 4
+eggs x 10
+oil x 2
