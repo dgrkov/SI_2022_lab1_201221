@@ -1,5 +1,5 @@
 bread x 3
-bacon x 10
+bacon x 8
 milk x 4
 eggs x 10
 oil x 2
