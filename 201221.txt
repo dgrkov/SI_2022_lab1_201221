@@ -1,0 +1,106 @@
+git clone https://github.com/dgrkov/SI_2022_lab1_201221.git  --> kloniranje na repo
+cd SI_2022_lab1_201221 --> vleguvam vo repoto
+racno gi napishav produktite
+git add shopping_list.txt --> stageing na shopping_list.txt
+git commit -m "Add 5 items to the shopping list" --> commit na shopping_list.txt
+racno vnesiv kolicina
+git add shopping_list.txt --> stageing na shopping_list.txt
+git commit -m "Add quantaties to the items" --> commit na shopping_list.txt
+git branch branch1 --> kreiranje na granka 1
+git branch branch2 --> kreiranje na granka 1
+git log
+commit b22623413839adbd2a4ea0d0b8f6d94f1b72e873 (HEAD -> master, branch2, branch1)
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 18:24:58 2022 +0200
+
+    Add quantaties to the items
+
+commit 90515c95dd86fc08d229200fb51e58c905873b76
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 17:42:57 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 780acba2afa8c8ab03035fda9a3e3fa6af74a4c4 (origin/master, origin/HEAD)
+Author: dgrkov <103371258+dgrkov@users.noreply.github.com>
+Date:   Sun Apr 10 16:20:21 2022 +0200
+
+    Initial commit
+git pull --> za sinhronizacija
+git push --> za sinhronizacija
+git checkout branch1 --> za prefrluvanje na branch1
+racno ja smeniv kolicinata na 5-tiot item vo shopping list
+git add shopping_list.txt --> za staging na shopping_list
+git commit -m "Change quantity of item #5" --> commit so poraka
+git checkout master --> prefrluvanje na grankata master
+racno ja smeniv kolicinata na 2-tiot item vo shopping list
+git add shopping_list.txt --> za staging na shopping_list
+git commit -m "Change quantity of item #2" --> commit so poraka
+git pull --> za sinhronizacija so oddaleceniot repozitorium
+git push --> za sinhronizacija so oddaleceniot repozitorium
+git checkout branch2 --> prefrluvanje na grankata branch2 
+racno ja smeniv kolicinata na vtorata stavka
+git add shopping_list.txt --> za staging na shopping_list
+git commit -m "Change quantity of item #4" --> commit so poraka
+C:\Users\grkov\SI_2022_lab1_201221>git log
+commit c1f0ec17e8b3e965ab4a34d3c112e7381c021579 (HEAD -> branch2)
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 22:25:54 2022 +0200
+
+    Modify item #4
+
+commit b22623413839adbd2a4ea0d0b8f6d94f1b72e873
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 18:24:58 2022 +0200
+
+    Add quantaties to the items
+
+commit 90515c95dd86fc08d229200fb51e58c905873b76
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 17:42:57 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 780acba2afa8c8ab03035fda9a3e3fa6af74a4c4
+Author: dgrkov <103371258+dgrkov@users.noreply.github.com>
+Date:   Sun Apr 10 16:20:21 2022 +0200
+
+    Initial commit
+dodadiv 6-ta stavka vo shopping list
+git add shopping_list.txt --> za staging na shopping_list
+git commit --amend -m "Modify item #4 and add item #6" --> dospojuvanje na commit so poraka
+C:\Users\grkov\SI_2022_lab1_201221>git log
+commit 64ae80ac65edec3860bb1ae14d988e0b656574d8 (HEAD -> branch2)
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 22:25:54 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit b22623413839adbd2a4ea0d0b8f6d94f1b72e873
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 18:24:58 2022 +0200
+
+    Add quantaties to the items
+
+commit 90515c95dd86fc08d229200fb51e58c905873b76
+Author: Daniel Grkov <danielgrkov5@gmail.com>
+Date:   Sun Apr 10 17:42:57 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 780acba2afa8c8ab03035fda9a3e3fa6af74a4c4
+Author: dgrkov <103371258+dgrkov@users.noreply.github.com>
+Date:   Sun Apr 10 16:20:21 2022 +0200
+
+    Initial commit
+git checkout master --> prefrluvanje na grankata master 
+git merge branch1 --> spojuvanje na grankata branch1 so master:
+(ne se slucija konflikti, Merge made by the 'ort' strategy)
+git merge branch2 --> spojuvanje na grankata branch2 so master:
+(se slucija konflikti, gi razreshiv racno so naogjanje kompromis na konfliktnite stvari)
+git add shopping_list --> za staging na shopping_list
+git commit -m "Modify item #4 and add item #6" --> dospojuvanje na commit so poraka
+git merge branch2 --> spojuvanje na branch2 so master
+
+
+
