@@ -1,5 +1,6 @@
 bread x 3
 bacon x 10
 milk x 4
-eggs x 10
+eggs x 30
 oil x 2
+coca cola 
